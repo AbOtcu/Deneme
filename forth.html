@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <button>Outside the form doesnt submit</button>
+    <form action="/tacos" method="get">
+        <label for="username">Enter a username</label>
+        <input name="isim" id="username" type="text" placeholder="username"> <br>
+
+        <label for="password">Enter a password</label>
+        <input name="sifre" id="password" type="password" placeholder="password"> <br>
+
+        <label for="color">Pick a color</label>
+        <input name="renk" id="color" type="color"> <br>
+
+        <button type="button">Dont submit regular button thanks to type button</button><br>
+        <label for="number">Enter your age</label>
+        <input name="sayi" id="number" type="number" min="1" max="1000" step="2" > <br>
+
+        <button type="submit">Submit(bunun defaulty typeı submit form içinde</button>
+        <input type="submit" value="aynı ama input type submit">
+
+    </form>
+
+    <hr>
+    <h2>Hijack Searches</h2>
+    <h3>Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <label for="ytsearch">Type for youtube</label>
+        <input id="ytsearch" type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+
+    <h3>Google</h3>
+    <form action="https://www.google.com/search">
+        <label for="gogsearch">Type For google</label>
+        <input id="gogsearch" name="q" type="text">
+        <button>Search Google</button>
+    </form>
+
+    <h2>Radio and Checkboxes</h2>
+    <form>
+        <input type="checkbox" name="agrre tos" id="agree" checked>
+        <label for="agree">I agree everything</label>
+
+
+        <!-- Radio inputlara aynı namei ver sadcee biri seçilir ver valuelar gönderilir-->
+        <p>
+            <label for="xs">Xsmall</label>
+            <input type="radio" name="size" id="xs" value="xs">
+
+            <label for="s">Small</label>
+            <input type="radio" name="size" id="s" value="s">
+
+            <label for="m">Medium</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+
+        <p>
+            <label for="team-select">Choose the best team</label>
+            <select id="team-select" name="team">
+                <option value="fb">Fenerbahçe</option>
+                <option value="gs" selected>Galatasaray</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="menzil">Amount of Cheese</label>
+            <input type="range" name="cheeseLevel" min="1" max="10" step="2" value="5" id="menzil">
+        </p>
+
+        <p>
+            <label for= "requests">Any requests</label>
+            <textarea placeholder="write +sth" id="requests" rows="10" name="request" cols="20"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h2>Validation Demo</h2>
+    <form>
+        <label for="first">Enter first name</label>
+        <input type="text" id="first" name="firstname" required>
+
+        <label for="username">Enter first name</label>
+        <input required type="text" id="username" name="username" minlength="5" maxlength="20">
+        
+        <input type="email" required>
+
+        <input type="url" required>
+        <button>Submit</button>
+    </form>
+
+    <a href="fifth.html">Next Page</a>
+
+</body>
+
+</html>

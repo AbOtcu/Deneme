@@ -1,0 +1,45 @@
+h1
+{
+    color : rgb(227, 153, 68);
+    background-color : blue;
+}
+
+button
+{
+    color : #5FCFFC ;
+    background-color : rgb(40, 59, 222);
+}
+
+p
+{
+    color : rgb(255, 147, 15);
+} 
+
+body
+{
+    background-color : #ffffff;
+}
+
+h2
+{
+    color : rgb(255, 145, 0);
+    text-align : center;
+    width : 50%;
+    font-weight : normal;
+
+    text-decoration : #ff0505 line-through wavy;
+    letter-spacing: 20px;
+
+    font-size: 50px;
+}
+
+a
+{
+    text-decoration : none ;
+}
+
+p
+{
+    line-height : 2;
+    font-family: Futura,Verdana,sans-serif;
+}

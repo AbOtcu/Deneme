@@ -1,0 +1,106 @@
+h1,h2
+{
+    font-size: 30px;
+    color:#457b9d;
+}
+
+body
+{
+    background-color: #edf6f9;
+}
+
+button
+{
+    background-color:#ffc300;
+}
+
+#VoteB
+{
+    background-color: brown;
+}
+
+span
+{
+    color:rgb(253, 245, 14);
+}
+
+.tag
+{
+    background-color:red ;
+}
+
+
+/* bu links classının içinde olan a */
+
+.links a
+{
+    color:rgb(255, 153, 0);
+}
+
+/* bu h1den sonra gelen p */
+h1+p
+{
+    background-color:red;
+}
+
+/* direct child bir level down*/
+div>ol 
+{
+    background-color: black;
+}
+
+input[type="text"]
+{
+    background-color:blue;
+}
+
+
+/*  ul.links */
+ul[class="links"]
+{
+    background-color: azure;
+}
+
+a[href*="google"]
+{
+    color:magenta;
+}
+
+/* all anchors when they have hover*/
+.Background button:hover
+{
+    background-color: black;
+    color: yellow;
+}
+
+button:active
+{
+    background-color: red;
+    color: yellow;
+}
+
+ol:nth-of-type(2n)
+{
+    background-color: red;
+}
+
+
+/*first-line flnd var */
+li::first-letter
+{
+    color: black;
+}
+
+/* self explanatory !important */
+p::selection
+{
+    background-color: yellow !important ;
+}
+
+
+/* inheritance var css de unutma  mesela bodyi renkli yap h1 renli olur */
+
+/*
+mesela  forma style koy button inherit etmez etmesini istesen
+
+button{color:inherit;} nearest parenttan inherit ediyor
